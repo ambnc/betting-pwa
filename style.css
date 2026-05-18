@@ -5,7 +5,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #101010;
+  background:
+    radial-gradient(circle at top, rgba(0, 200, 83, 0.14), transparent 28%),
+    #101010;
   color: #ffffff;
 }
 
@@ -20,51 +22,81 @@ main {
 
 .screen {
   width: 100%;
-  max-width: 480px;
+  max-width: 520px;
   background: #181818;
-  border-radius: 24px;
+  border: 1px solid #262626;
+  border-radius: 28px;
   padding: 28px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
 }
 
-.badge {
+.wide-screen {
+  max-width: 620px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.badge,
+.app-label,
+.offer-geo,
+.offer-category {
   width: fit-content;
   padding: 8px 12px;
   border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.badge {
   background: #00c853;
   color: #101010;
-  font-weight: 700;
-  margin-bottom: 20px;
+}
+
+.app-label {
+  background: #242424;
+  color: #bdbdbd;
 }
 
 .step {
   color: #00c853;
   font-size: 14px;
+  font-weight: 700;
   margin: 0 0 12px;
 }
 
 h1 {
   margin: 0 0 16px;
-  font-size: 32px;
-  line-height: 1.1;
+  font-size: 34px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
 }
 
 h2 {
   margin: 8px 0 10px;
   font-size: 20px;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
 }
 
 .text {
   color: #d0d0d0;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .small-text {
-  margin-top: 20px;
+  margin-top: 18px;
   color: #909090;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .grid {
@@ -81,6 +113,7 @@ button,
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
+  font-family: inherit;
 }
 
 .primary-btn,
@@ -89,28 +122,45 @@ button,
   width: 100%;
   margin-top: 18px;
   padding: 14px 18px;
-  border-radius: 14px;
+  border-radius: 16px;
   background: #00c853;
   color: #101010;
   text-align: center;
+  transition: 0.2s ease;
 }
 
 .secondary-btn {
   width: 100%;
   margin-top: 12px;
   padding: 14px 18px;
-  border-radius: 14px;
+  border-radius: 16px;
   background: #2a2a2a;
   color: #ffffff;
+  transition: 0.2s ease;
 }
 
 .option-btn {
   width: 100%;
-  padding: 16px;
-  border-radius: 16px;
+  padding: 18px;
+  border-radius: 18px;
   background: #242424;
   color: #ffffff;
   text-align: left;
+  transition: 0.2s ease;
+}
+
+.option-btn span {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.option-btn small {
+  display: block;
+  color: #a8a8a8;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .option-btn:hover,
@@ -123,7 +173,8 @@ button,
   background: #14e06a;
 }
 
-.offers-list {
+.offers-list,
+.faq-list {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -131,23 +182,71 @@ button,
 }
 
 .offer-card,
-.empty-card {
+.empty-card,
+.info-box,
+.warning-box {
   padding: 20px;
-  border-radius: 18px;
+  border-radius: 20px;
   background: #242424;
+  border: 1px solid #303030;
+}
+
+.offer-card p,
+.empty-card p,
+.info-box p,
+.warning-box p {
+  color: #cfcfcf;
+  line-height: 1.5;
+}
+
+.offer-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .offer-geo {
-  color: #00c853;
-  font-size: 13px;
-  font-weight: 700;
+  background: rgba(0, 200, 83, 0.16);
+  color: #00e676;
+}
+
+.offer-category {
+  background: #303030;
+  color: #cfcfcf;
 }
 
 .bonus {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 700;
+}
+
+.warning-box {
+  background: rgba(255, 193, 7, 0.08);
+  border-color: rgba(255, 193, 7, 0.22);
+}
+
+.warning-box h2 {
+  color: #ffd36a;
 }
 
 .footer-actions {
   margin-top: 18px;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 16px;
+    align-items: flex-start;
+  }
+
+  .screen {
+    margin-top: 16px;
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
