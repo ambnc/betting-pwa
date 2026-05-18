@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: #ffffff;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: 100%;
+  max-width: 480px;
+  background: #181818;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.badge {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #00c853;
+  color: #101010;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.step {
+  color: #00c853;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 8px 0 10px;
+  font-size: 20px;
+}
+
+.text {
+  color: #d0d0d0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.small-text {
+  margin-top: 20px;
+  color: #909090;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+button,
+.primary-link {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.primary-btn,
+.primary-link {
+  display: inline-block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: #00c853;
+  color: #101010;
+  text-align: center;
+}
+
+.secondary-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.option-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #242424;
+  color: #ffffff;
+  text-align: left;
+}
+
+.option-btn:hover,
+.secondary-btn:hover {
+  background: #333333;
+}
+
+.primary-btn:hover,
+.primary-link:hover {
+  background: #14e06a;
+}
+
+.offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.offer-card,
+.empty-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #242424;
+}
+
+.offer-geo {
+  color: #00c853;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.bonus {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-actions {
+  margin-top: 18px;
+}
