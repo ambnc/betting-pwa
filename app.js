@@ -40,15 +40,12 @@ const languages = {
     bonus: "Bonus",
     game: "Gioco / sezione",
     requirements: "Requisiti",
-    riskNote: "Nota sul rischio",
     faq: "FAQ / Gioco responsabile",
     directServiceNote: "Questa app non fornisce direttamente servizi di scommesse o gioco d'azzardo. Mostra solo schede informative e link esterni.",
     faqServiceTitle: "Questa app offre servizi di gioco?",
     faqServiceText: "No. Questa PWA non offre scommesse, giochi da casinò, depositi, prelievi o servizi di gioco direttamente.",
     faqBonusTitle: "I bonus possono cambiare?",
     faqBonusText: "Sì. Importi, disponibilità e requisiti dei bonus possono cambiare. Controlla sempre i termini finali sul sito esterno.",
-    faqResponsibleTitle: "Gioco responsabile",
-    faqResponsibleText: "Scommesse e gioco d'azzardo comportano rischi finanziari. Questa app non garantisce profitti o vincite.",
     faqAgeTitle: "Limite di età",
     faqAgeText: "Questo contenuto è destinato solo agli utenti che hanno l'età legale per il gioco nel proprio paese."
   },
@@ -76,15 +73,12 @@ const languages = {
     bonus: "Bonus",
     game: "Jeu / section",
     requirements: "Conditions",
-    riskNote: "Note de risque",
     faq: "FAQ / Jeu responsable",
     directServiceNote: "Cette application ne fournit pas directement de services de paris ou de jeux d'argent. Elle affiche uniquement des fiches d'information et des liens externes.",
     faqServiceTitle: "Cette application fournit-elle des services de jeu?",
     faqServiceText: "Non. Cette PWA ne propose pas directement de paris, jeux de casino, dépôts, retraits ou services de jeu.",
     faqBonusTitle: "Les bonus peuvent-ils changer?",
     faqBonusText: "Oui. Les montants, la disponibilité et les conditions des bonus peuvent changer. Vérifiez toujours les conditions finales sur le site externe.",
-    faqResponsibleTitle: "Jeu responsable",
-    faqResponsibleText: "Les paris et jeux d'argent comportent un risque financier. Cette application ne garantit aucun profit ni gain.",
     faqAgeTitle: "Restriction d'âge",
     faqAgeText: "Ce contenu est destiné uniquement aux utilisateurs ayant l'âge légal pour jouer dans leur pays."
   },
@@ -112,15 +106,12 @@ const languages = {
     bonus: "Bonus",
     game: "Spel / sectie",
     requirements: "Vereisten",
-    riskNote: "Risicomelding",
     faq: "FAQ / Verantwoord spelen",
     directServiceNote: "Deze app biedt zelf geen wed- of gokdiensten aan. De app toont alleen informatieve kaarten en externe links.",
     faqServiceTitle: "Biedt deze app gokdiensten aan?",
     faqServiceText: "Nee. Deze PWA biedt geen weddenschappen, casinospellen, stortingen, opnames of gokdiensten direct aan.",
     faqBonusTitle: "Kunnen bonussen veranderen?",
     faqBonusText: "Ja. Bonusbedragen, beschikbaarheid en voorwaarden kunnen veranderen. Controleer altijd de definitieve voorwaarden op de externe website.",
-    faqResponsibleTitle: "Verantwoord spelen",
-    faqResponsibleText: "Wedden en gokken brengen financieel risico met zich mee. Deze app garandeert geen winst of resultaat.",
     faqAgeTitle: "Leeftijdsbeperking",
     faqAgeText: "Deze inhoud is alleen bedoeld voor gebruikers die de wettelijke gokleeftijd in hun land hebben bereikt."
   },
@@ -148,15 +139,12 @@ const languages = {
     bonus: "Bonus",
     game: "Spiel / Bereich",
     requirements: "Bedingungen",
-    riskNote: "Risikohinweis",
     faq: "FAQ / Verantwortungsvolles Spielen",
     directServiceNote: "Diese App bietet keine Wett- oder Glücksspieldienste direkt an. Sie zeigt nur Informationskarten und externe Links.",
     faqServiceTitle: "Bietet diese App Glücksspieldienste an?",
     faqServiceText: "Nein. Diese PWA bietet keine Wetten, Casinospiele, Einzahlungen, Auszahlungen oder Glücksspieldienste direkt an.",
     faqBonusTitle: "Können sich Boni ändern?",
     faqBonusText: "Ja. Bonusbeträge, Verfügbarkeit und Bedingungen können sich ändern. Prüfe immer die endgültigen Bedingungen auf der externen Website.",
-    faqResponsibleTitle: "Verantwortungsvolles Spielen",
-    faqResponsibleText: "Wetten und Glücksspiel sind mit finanziellen Risiken verbunden. Diese App garantiert keinen Gewinn.",
     faqAgeTitle: "Altersbeschränkung",
     faqAgeText: "Dieser Inhalt ist nur für Nutzer bestimmt, die in ihrem Land das gesetzliche Glücksspielalter erreicht haben."
   }
@@ -190,41 +178,41 @@ const categoryLabels = {
 };
 
 const offers = [
-  ["Italy", "Sports Betting", "Sisal", "Serie A Live", "Sisal Calcio Welcome", "Offerta sportiva per Serie A, Champions League e match live.", "Fino a 100€ in bonus scommesse", "https://example.com/?geo=it&brand=sisal"],
-  ["Italy", "Sports Betting", "SNAI", "Matchday Live", "SNAI Matchday Boost", "Promo per derby, big match e mercati live.", "Bonus live fino a 75€", "https://example.com/?geo=it&brand=snai"],
-  ["Italy", "Casino", "Lottomatica", "Book of Ra Deluxe", "Lottomatica Casino Pack", "Pacchetto casino con slot classiche e giochi live.", "Welcome casino fino a 200€", "https://example.com/?geo=it&brand=lottomatica"],
-  ["Italy", "Casino", "Eurobet", "Starburst", "Eurobet Slots Bonus", "Offerta slot con giri promozionali e bonus iniziale.", "100 giri promozionali su slot selezionate", "https://example.com/?geo=it&brand=eurobet"],
-  ["Italy", "Crash Games", "Bet365 Italy", "Aviator", "Aviator Starter Deal", "Crash game con aereo, moltiplicatore e cashout rapido.", "Crash bonus fino a 50€", "https://example.com/?geo=it&brand=bet365&game=aviator"],
-  ["Italy", "Crash Games", "888 Casino Italy", "Spaceman", "Spaceman Fast Promo", "Crash game a tema spazio con cashout e moltiplicatore.", "Fast game bonus fino a 60€", "https://example.com/?geo=it&brand=888&game=spaceman"],
-  ["Italy", "Bonuses", "PokerStars Italy", "Poker Welcome Hub", "PokerStars Welcome Bonus", "Bonus nuovo utente per poker, tornei e giochi selezionati.", "Bonus nuovo utente fino a 150€", "https://example.com/?geo=it&brand=pokerstars"],
-  ["Italy", "Bonuses", "GoldBet", "Weekend Boost", "GoldBet Weekend Boost", "Promo weekend per sport, casino e giochi selezionati.", "Boost weekend fino a 80€", "https://example.com/?geo=it&brand=goldbet"],
+  ["Italy", "Sports Betting", "Sisal", "Serie A Live", "Sisal Calcio Welcome", "Offerta sportiva per Serie A, Champions League e match live.", "Fino a 100€ in bonus scommesse", "https://www.sisal.it/"],
+  ["Italy", "Sports Betting", "SNAI", "Matchday Live", "SNAI Matchday Boost", "Promo per derby, big match e mercati live.", "Bonus live fino a 75€", "https://www.snai.it/"],
+  ["Italy", "Casino", "Lottomatica", "Book of Ra Deluxe", "Lottomatica Casino Pack", "Pacchetto casino con slot classiche e giochi live.", "Welcome casino fino a 200€", "https://www.lottomatica.it/"],
+  ["Italy", "Casino", "Eurobet", "Starburst", "Eurobet Slots Bonus", "Offerta slot con giri promozionali e bonus iniziale.", "100 giri promozionali su slot selezionate", "https://www.eurobet.it/"],
+  ["Italy", "Crash Games", "Bet365 Italy", "Aviator", "Aviator Starter Deal", "Crash game con aereo, moltiplicatore e cashout rapido.", "Crash bonus fino a 50€", "https://spribe.co/games/aviator"],
+  ["Italy", "Crash Games", "888 Casino Italy", "Spaceman", "Spaceman Fast Promo", "Crash game a tema spazio con cashout e moltiplicatore.", "Fast game bonus fino a 60€", "https://stake.com/casino/games/pragmatic-play-live-spaceman"],
+  ["Italy", "Bonuses", "PokerStars Italy", "Poker Welcome Hub", "PokerStars Welcome Bonus", "Bonus nuovo utente per poker, tornei e giochi selezionati.", "Bonus nuovo utente fino a 150€", "https://www.pokerstars.it/"],
+  ["Italy", "Bonuses", "GoldBet", "Weekend Boost", "GoldBet Weekend Boost", "Promo weekend per sport, casino e giochi selezionati.", "Boost weekend fino a 80€", "https://www.goldbet.it/"],
 
-  ["France", "Sports Betting", "Winamax", "Ligue 1 Live", "Winamax Ligue 1 Boost", "Offre de paris sportifs pour Ligue 1, tennis et événements live.", "Jusqu'à 100€ en bonus paris", "https://example.com/?geo=fr&brand=winamax"],
-  ["France", "Sports Betting", "Betclic", "Match Live", "Betclic Match Live Promo", "Promo pour grands matchs, cotes live et marchés pré-match.", "Bonus live jusqu'à 75€", "https://example.com/?geo=fr&brand=betclic"],
-  ["France", "Casino", "Unibet France", "Lucky Wheel", "Unibet Casino Style Pack", "Carte de démonstration casino avec roue bonus et jeux instantanés.", "Pack promo jusqu'à 100€", "https://example.com/?geo=fr&brand=unibet"],
-  ["France", "Casino", "Bwin France", "Roulette Live", "Bwin Live Casino Preview", "Carte de présentation pour live casino et jeux de table.", "Bonus découverte jusqu'à 80€", "https://example.com/?geo=fr&brand=bwin"],
-  ["France", "Crash Games", "Winamax", "Aviator", "Aviator Flight Promo", "Crash game avec avion, multiplicateur et cashout rapide.", "Bonus crash starter", "https://example.com/?geo=fr&brand=winamax&game=aviator"],
-  ["France", "Crash Games", "Betclic", "JetX", "JetX Fast Offer", "Crash game rapide avec fusée, multiplicateur et cashout.", "Bonus fast game jusqu'à 60€", "https://example.com/?geo=fr&brand=betclic&game=jetx"],
-  ["France", "Bonuses", "PMU", "Horse Racing Bonus", "PMU Starter Bonus", "Bonus de bienvenue pour courses hippiques et paris sportifs.", "Pack nouveau joueur jusqu'à 150€", "https://example.com/?geo=fr&brand=pmu"],
-  ["France", "Bonuses", "ParionsSport", "Welcome Sport Pack", "ParionsSport Welcome Deal", "Bonus sport pour nouveaux utilisateurs éligibles.", "Bonus sport jusqu'à 100€", "https://example.com/?geo=fr&brand=parionssport"],
+  ["France", "Sports Betting", "Winamax", "Ligue 1 Live", "Winamax Ligue 1 Boost", "Offre de paris sportifs pour Ligue 1, tennis et événements live.", "Jusqu'à 100€ en bonus paris", "https://www.winamax.fr/"],
+  ["France", "Sports Betting", "Betclic", "Match Live", "Betclic Match Live Promo", "Promo pour grands matchs, cotes live et marchés pré-match.", "Bonus live jusqu'à 75€", "https://www.betclic.fr/"],
+  ["France", "Casino", "Unibet France", "Lucky Wheel", "Unibet Casino Style Pack", "Carte de démonstration casino avec roue bonus et jeux instantanés.", "Pack promo jusqu'à 100€", "https://www.unibet.fr/"],
+  ["France", "Casino", "Bwin France", "Roulette Live", "Bwin Live Casino Preview", "Carte de présentation pour live casino et jeux de table.", "Bonus découverte jusqu'à 80€", "https://sports.bwin.fr/"],
+  ["France", "Crash Games", "Winamax", "Aviator", "Aviator Flight Promo", "Crash game avec avion, multiplicateur et cashout rapide.", "Bonus crash starter", "https://spribe.co/games/aviator"],
+  ["France", "Crash Games", "Betclic", "JetX", "JetX Fast Offer", "Crash game rapide avec fusée, multiplicateur et cashout.", "Bonus fast game jusqu'à 60€", "https://www.novibet.gr/en/casino/various-games"],
+  ["France", "Bonuses", "PMU", "Horse Racing Bonus", "PMU Starter Bonus", "Bonus de bienvenue pour courses hippiques et paris sportifs.", "Pack nouveau joueur jusqu'à 150€", "https://www.pmu.fr/"],
+  ["France", "Bonuses", "ParionsSport", "Welcome Sport Pack", "ParionsSport Welcome Deal", "Bonus sport pour nouveaux utilisateurs éligibles.", "Bonus sport jusqu'à 100€", "https://www.parionssport.fdj.fr/"],
 
-  ["Netherlands", "Sports Betting", "Bet365 Netherlands", "Eredivisie Live", "Bet365 Eredivisie Offer", "Sports offer for Eredivisie matches, live odds and football weekends.", "Up to 100€ sports welcome bonus", "https://example.com/?geo=nl&brand=bet365"],
-  ["Netherlands", "Sports Betting", "TOTO Online", "Live Match Boost", "TOTO Matchday Boost", "Live betting offer for football, tennis and evening matches.", "Live match bonus up to 75€", "https://example.com/?geo=nl&brand=toto"],
-  ["Netherlands", "Casino", "Holland Casino Online", "Book of Dead", "Holland Casino Slots Pack", "Casino offer with slots, live tables and welcome promo.", "Casino welcome up to 200€", "https://example.com/?geo=nl&brand=hollandcasino"],
-  ["Netherlands", "Casino", "Jacks.nl", "Starburst", "Jacks Slots Welcome", "Slots-style promotional offer for eligible users.", "100 welcome spins", "https://example.com/?geo=nl&brand=jacks"],
-  ["Netherlands", "Crash Games", "BetCity", "Aviator", "BetCity Aviator Deal", "Crash game with airplane multiplier and fast cashout.", "Aviator bonus up to 50€", "https://example.com/?geo=nl&brand=betcity&game=aviator"],
-  ["Netherlands", "Crash Games", "TOTO Casino", "Spaceman", "TOTO Spaceman Promo", "Crash-style game with space theme and multiplier cashout.", "Fast game bonus up to 65€", "https://example.com/?geo=nl&brand=toto&game=spaceman"],
-  ["Netherlands", "Bonuses", "Unibet Netherlands", "Welcome Hub", "Unibet Welcome Deal", "General new-player bonus for eligible users.", "New player bonus up to 150€", "https://example.com/?geo=nl&brand=unibet"],
-  ["Netherlands", "Bonuses", "Tombola", "Weekend Pack", "Tombola Weekend Pack", "Weekend bonus pack for casino, bingo and selected games.", "Weekend bonus pack up to 90€", "https://example.com/?geo=nl&brand=tombola"],
+  ["Netherlands", "Sports Betting", "Bet365 Netherlands", "Eredivisie Live", "Bet365 Eredivisie Offer", "Sports offer for Eredivisie matches, live odds and football weekends.", "Up to 100€ sports welcome bonus", "https://www.bet365.nl/"],
+  ["Netherlands", "Sports Betting", "TOTO Online", "Live Match Boost", "TOTO Matchday Boost", "Live betting offer for football, tennis and evening matches.", "Live match bonus up to 75€", "https://www.toto.nl/"],
+  ["Netherlands", "Casino", "Holland Casino Online", "Book of Dead", "Holland Casino Slots Pack", "Casino offer with slots, live tables and welcome promo.", "Casino welcome up to 200€", "https://www.hollandcasino.nl/online"],
+  ["Netherlands", "Casino", "Jacks.nl", "Starburst", "Jacks Slots Welcome", "Slots-style promotional offer for eligible users.", "100 welcome spins", "https://www.jacks.nl/"],
+  ["Netherlands", "Crash Games", "BetCity", "Aviator", "BetCity Aviator Deal", "Crash game with airplane multiplier and fast cashout.", "Aviator bonus up to 50€", "https://www.betcity.nl/casino/aviator"],
+  ["Netherlands", "Crash Games", "TOTO Casino", "Spaceman", "TOTO Spaceman Promo", "Crash-style game with space theme and multiplier cashout.", "Fast game bonus up to 65€", "https://casino.betfair.com/game/spaceman-apr"],
+  ["Netherlands", "Bonuses", "Unibet Netherlands", "Welcome Hub", "Unibet Welcome Deal", "General new-player bonus for eligible users.", "New player bonus up to 150€", "https://www.unibet.nl/"],
+  ["Netherlands", "Bonuses", "Tombola", "Weekend Pack", "Tombola Weekend Pack", "Weekend bonus pack for casino, bingo and selected games.", "Weekend bonus pack up to 90€", "https://www.tombola.nl/"],
 
-  ["Germany", "Sports Betting", "Tipico", "Bundesliga Live", "Tipico Bundesliga Bonus", "Sportwetten-Angebot für Bundesliga, Live-Quoten und Topspiele.", "Bis zu 100€ Sportwetten-Bonus", "https://example.com/?geo=de&brand=tipico"],
-  ["Germany", "Sports Betting", "Bet365 Germany", "Matchday Live", "Bet365 Matchday Promo", "Live-Angebot für Fußball, Tennis und Matchday-Märkte.", "Matchday Bonus bis 75€", "https://example.com/?geo=de&brand=bet365"],
-  ["Germany", "Casino", "Bwin Germany", "Book of Ra", "Bwin Casino Paket", "Casino-Angebot mit Slots, Live-Tischen und Welcome Bonus.", "Casino Bonus bis 200€", "https://example.com/?geo=de&brand=bwin"],
-  ["Germany", "Casino", "AdmiralBet", "Starburst", "AdmiralBet Slots Bonus", "Slot-Angebot mit Willkommensbonus und ausgewählten Spielen.", "120 Freispiele auf ausgewählte Slots", "https://example.com/?geo=de&brand=admiralbet"],
-  ["Germany", "Crash Games", "Betano Germany", "Aviator", "Betano Aviator Deal", "Crash-Game-Angebot mit Flugzeug, Multiplikator und schnellem Cashout.", "Crash Starter Bonus bis 50€", "https://example.com/?geo=de&brand=betano&game=aviator"],
-  ["Germany", "Crash Games", "Novibet Germany", "JetX", "Novibet JetX Fast Promo", "Fast-Game-Promo mit Raketen-Thema und Crash-Mechanik.", "Fast Game Bonus bis 65€", "https://example.com/?geo=de&brand=novibet&game=jetx"],
-  ["Germany", "Bonuses", "PokerStars Germany", "Poker Welcome", "PokerStars Starter Deal", "Allgemeines Willkommensangebot für Poker und ausgewählte Spiele.", "Neukundenbonus bis 150€", "https://example.com/?geo=de&brand=pokerstars"],
-  ["Germany", "Bonuses", "Interwetten", "Weekend Bonus", "Interwetten Weekend Deal", "Wochenend-Promo für Sport, Casino und ausgewählte Spiele.", "Wochenendbonus bis 90€", "https://example.com/?geo=de&brand=interwetten"]
+  ["Germany", "Sports Betting", "Tipico", "Bundesliga Live", "Tipico Bundesliga Bonus", "Sportwetten-Angebot für Bundesliga, Live-Quoten und Topspiele.", "Bis zu 100€ Sportwetten-Bonus", "https://www.tipico.de/"],
+  ["Germany", "Sports Betting", "Bet365 Germany", "Matchday Live", "Bet365 Matchday Promo", "Live-Angebot für Fußball, Tennis und Matchday-Märkte.", "Matchday Bonus bis 75€", "https://www.bet365.de/"],
+  ["Germany", "Casino", "Bwin Germany", "Book of Ra", "Bwin Casino Paket", "Casino-Angebot mit Slots, Live-Tischen und Welcome Bonus.", "Casino Bonus bis 200€", "https://sports.bwin.de/"],
+  ["Germany", "Casino", "AdmiralBet", "Starburst", "AdmiralBet Slots Bonus", "Slot-Angebot mit Willkommensbonus und ausgewählten Spielen.", "120 Freispiele auf ausgewählte Slots", "https://www.admiralbet.de/"],
+  ["Germany", "Crash Games", "Betano Germany", "Aviator", "Betano Aviator Deal", "Crash-Game-Angebot mit Flugzeug, Multiplikator und schnellem Cashout.", "Crash Starter Bonus bis 50€", "https://spribe.co/games/aviator"],
+  ["Germany", "Crash Games", "Novibet Germany", "JetX", "Novibet JetX Fast Promo", "Fast-Game-Promo mit Raketen-Thema und Crash-Mechanik.", "Fast Game Bonus bis 65€", "https://www.novibet.gr/en/casino/various-games"],
+  ["Germany", "Bonuses", "PokerStars Germany", "Poker Welcome", "PokerStars Starter Deal", "Allgemeines Willkommensangebot für Poker und ausgewählte Spiele.", "Neukundenbonus bis 150€", "https://www.pokerstars.de/"],
+  ["Germany", "Bonuses", "Interwetten", "Weekend Bonus", "Interwetten Weekend Deal", "Wochenend-Promo für Sport, Casino und ausgewählte Spiele.", "Wochenendbonus bis 90€", "https://www.interwetten.de/"]
 ].map((item, index) => ({
   id: index + 1,
   geo: item[0],
@@ -233,11 +221,10 @@ const offers = [
   gameName: item[3],
   title: item[4],
   shortDescription: item[5],
-  description: `${item[4]} is an offer card for ${item[2]} and the ${item[3]} section. This PWA shows demo information and redirects to an external placeholder link.`,
+  description: `${item[4]} is an offer card for ${item[2]} and the ${item[3]} section. This PWA shows demo information and redirects to an external offer or game page.`,
   bonus: item[6],
   link: item[7],
-  requirements: "18+ only. New users only. Terms and conditions apply.",
-  riskNote: "Betting and gambling products involve financial risk. This demo does not guarantee winnings or profit."
+  requirements: "18+ only. New users only. Terms and conditions apply."
 }));
 
 function t(key) {
@@ -451,11 +438,6 @@ function renderOfferDetails(offerId) {
         <p>${offer.requirements}</p>
       </div>
 
-      <div class="warning-box">
-        <h2>${t("riskNote")}</h2>
-        <p>${offer.riskNote}</p>
-      </div>
-
       <a class="primary-link" href="${offer.link}" target="_blank" rel="noopener noreferrer">
         ${t("goToOffer")}
       </a>
@@ -485,11 +467,6 @@ function renderResponsibleScreen() {
         <div class="info-box">
           <h2>${t("faqBonusTitle")}</h2>
           <p>${t("faqBonusText")}</p>
-        </div>
-
-        <div class="warning-box">
-          <h2>${t("faqResponsibleTitle")}</h2>
-          <p>${t("faqResponsibleText")}</p>
         </div>
 
         <div class="info-box">
